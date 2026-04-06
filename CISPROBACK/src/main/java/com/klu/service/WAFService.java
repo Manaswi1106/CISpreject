@@ -4,7 +4,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class WAFService {
+    public boolean isInvalidFile(String filename) {
+    if (filename == null) return true;
 
+    // Example validation (you can modify)
+    return filename.contains("..") || filename.contains("/") || filename.contains("\\");
+}
     // Simple attack detection logic
     public boolean isMaliciousInput(String input) {
 
