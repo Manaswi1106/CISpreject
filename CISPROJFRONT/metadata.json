@@ -1,0 +1,5 @@
+{
+  "name": "Secure Student Assignment System",
+  "description": "A modern, secure assignment management system protected by Web Application Firewall (WAF) technology.",
+  "requestFramePermissions": []
+}
